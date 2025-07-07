@@ -168,23 +168,3 @@ int main() {
     freeFileInfo(&file_info);
 
     return 0;
-    //FileInfo file_info;
-    //// Установка строковых данных
-    //setStringData(&file_info, "ABCD");
-    //printf("String data: %s\n", getStringData(&file_info));
-
-    //// Установка двоичных данных
-    //char* binary_data[] = {"01000001", "01000010", "01000011", "01000100", NULL};
-    //setBinaryData(&file_info, binary_data, 4);
-    //char** binary_data_read = getBinaryData(&file_info);
-    //printf("Binary data: ");
-    //for (int i = 0; binary_data_read[i]; i++) {
-    //    printf("BIN:%s ", binary_data_read[i]);
-    //    printf("String:%s ", get_string_code(binary_data_read[i], strlen(binary_data_read[i])));
-    //}
-    //printf("\n");
-
-    //freeFileInfo(&file_info);
-
-    //return 0;
-}

@@ -1,0 +1,70 @@
+# Игнорировать ВСЁ по умолчанию
+*
+
+# Разрешить папки (сохраняем структуру)
+!*/
+
+# Разрешить .git и .gitignore ###
+!.git/
+!.gitignore
+
+# Разрешить исходники C/C++
+!*.c
+!*.cpp
+!*.h
+!*.hpp
+
+# Разрешить README и LICENSE (опционально)
+!README*
+!LICENSE*
+
+# Игнорировать специфичные файлы из вашего анализа
+*.exe
+*.js
+*.tlog
+*.ipch
+*.vsidx
+*.obj
+*.pdb
+*.db
+*.idb
+*.ilk
+*.exe
+*.lastbuildstate
+*.suo
+*.filters
+*.vcxproj
+*.user
+*.recipe
+*.bin
+*.ipdb
+*.iobj
+*.manifest
+*.sarif
+
+# Игнорировать временные файлы
+*.log
+*.tmp
+*.temp
+
+# Игнорировать документы
+*.pdf
+*.md5
+*.map
+*.svg
+*.eps
+*.tex
+
+# Игнорировать системные файлы
+.DS_Store
+Thumbs.db
+
+# Игнорировать резервные копии
+*~
+*.bak
+*.backup
+
+# Игнорировать другие бинарники
+*.zip
+*.rar
+*.7z

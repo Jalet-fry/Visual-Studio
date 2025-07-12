@@ -61,12 +61,12 @@ void addBodyType(char ***bodyTypes, int **counts, int *totalTypes, char *bodyTyp
 void sortBodyTypes(char **bodyTypes, int *counts, int totalTypes);
 void printSortedBodyTypes(char **bodyTypes, int *counts, int totalTypes);
 void list_by_bodytype(Hashtable* hashtable);
-unsigned long hash_function(char* key);
+unsigned long hash_function(const char* key);  // Добавлен const
+int find_life_spans(Car *car);  // Убран лишний параметр
 Hashtable* create_hashtable(int size);
 void ht_resize(Hashtable **hashtable);
 void ht_set(Hashtable **hashtable, char *key, Car *car);
 Hashtable *fill_our_hash(char *filename);
-int find_life_spans(Car *car, int compare_life_span);
 int find_min_life_span(Hashtable* hashtable);
 void free_hash_element(HashtableEntry* table, int index);
 void delete_by_min_life_cycle(Hashtable* hashtable);

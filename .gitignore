@@ -7,6 +7,7 @@
 # Разрешить .git и .gitignore ###
 !.git/
 !.gitignore
+!.gitatribute
 
 # Разрешить исходники C/C++
 !*.c

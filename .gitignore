@@ -4,46 +4,40 @@
 # Разрешить папки (сохраняем структуру)
 !*/
 
-# Разрешить .git и .gitignore ###
+# Разрешить .git и связанные файлы
 !.git/
 !.gitignore
-!.gitatribute
+!.gitattributes
 
 # Разрешить исходники C/C++
 !*.c
 !*.cpp
 !*.h
 !*.hpp
+!*.sln
+!*.vcxproj
+!*.vcxproj.filters
 
-# Разрешить README и LICENSE (опционально)
+# Разрешить README и LICENSE
 !README*
 !LICENSE*
 
-# Игнорировать специфичные файлы из вашего анализа
+# Игнорировать бинарные и временные файлы
 *.exe
-*.js
-*.tlog
-*.ipch
-*.vsidx
 *.obj
 *.pdb
-*.db
-*.idb
 *.ilk
-*.exe
+*.idb
+*.ipch
+*.tlog
 *.lastbuildstate
 *.suo
-*.filters
-*.vcxproj
 *.user
-*.recipe
 *.bin
 *.ipdb
 *.iobj
 *.manifest
 *.sarif
-
-# Игнорировать временные файлы
 *.log
 *.tmp
 *.temp
@@ -65,7 +59,7 @@ Thumbs.db
 *.bak
 *.backup
 
-# Игнорировать другие бинарники
+# Игнорировать архивы
 *.zip
 *.rar
 *.7z

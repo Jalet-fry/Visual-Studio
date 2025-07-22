@@ -1,0 +1,21 @@
+# Установить автоматическую нормализацию концов строк для текстовых файлов
+* text=auto
+
+# Явно указать текстовые файлы
+*.c text
+*.h text
+*.cpp text
+*.hpp text
+*.md text
+*.txt text
+*.sln text
+*.vcxproj text
+*.vcxproj.filters text
+
+# Указать бинарные файлы
+*.png binary
+*.jpg binary
+*.pdf binary
+
+# Для скриптов: предотвратить замену LF на CRLF
+*.sh text eol=lf

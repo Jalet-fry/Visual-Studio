@@ -1,13 +1,15 @@
 #include "header.h" 
-char *my_strchr(char *str, int c){
+
+char *my_strchr(const char *str, int c){
     while (*str != '\0'){ 
         if (*str == c){ 
-            return str; 
+            return (char*)str; 
         }
         str++; 
     }
     return NULL; 
 }
+
 char *my_strtok(char *str, const char *delim) {
     static char *next; 
     char *p; 
@@ -38,6 +40,7 @@ char *my_strtok(char *str, const char *delim) {
         return NULL; 
     }
 }
+
 char *my_strcat(char *dest, const char *src) {
     char *p = dest; 
     while (*dest != '\0'){ 
@@ -51,6 +54,7 @@ char *my_strcat(char *dest, const char *src) {
     *dest = '\0'; 
     return p; 
 }
+
 int my_strlen(const char *str){
     int len = 0; 
     while (str[len] != '\0'){ 
@@ -58,16 +62,10 @@ int my_strlen(const char *str){
     }
     return len; 
 }
-/*
-    1   2   3   4   5
-    6   7   8   9   10
-   11   12  13  14  15
-   16   17  18  19  20
-   "Do hust hus idiot"
-*/
-void my_strncpy(char* dest, char* src, int max_len) {
+
+void my_strncpy(char* dest, const char* src, int max_len) {
     int len = 0; 
-    while (*src != '\\0' && len < max_len - 1) { 
+    while (*src != '\0' && len < max_len - 1) { 
         *dest = *src; 
         dest++; 
         src++; 
@@ -75,14 +73,12 @@ void my_strncpy(char* dest, char* src, int max_len) {
     }
     *dest = 0; 
 }
-void my_strcpy(char *dest, char *src){
-    int len = 0; 
+
+void my_strcpy(char *dest, const char *src){
     while (*src != 0){ 
         *dest = *src; 
         dest++; 
         src++; 
-        len++; 
     }
     *dest = '\0'; 
 }
-

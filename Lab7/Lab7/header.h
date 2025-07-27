@@ -15,12 +15,12 @@ cd .\x64\Debug\;.\Lab7.exe
 
 ;;
 */
-void my_strncpy(char* dest, char* src, int max_len);
+void my_strncpy(char* dest, const char* src, int max_len);
 int my_strlen(const char *str);
-char *my_strchr(char *str, int c);
+char *my_strchr(const char *str, int c);
 char* my_strcat(char* dest, const char* src);
-void my_strcpy(char *dest, char *src);
+void my_strcpy(char *dest, const char *src);
 char* my_strtok(char* str, const char* delim);
-int my_atoi(char *str);
+int my_atoi(const char *str);
 typedef void (*task_func)(int, char **);
 #endif 

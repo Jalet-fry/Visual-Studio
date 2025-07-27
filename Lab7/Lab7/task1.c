@@ -76,9 +76,9 @@ void task1(int argc, char** args) {
 
 
 // Возвращает число или 0, если строка не содержит только число
-int my_atoi(char *str) {
+int my_atoi(const char *str) {
     int x = 0; 
-    int sign = 1; // Переменная для хранения знака числа
+    int sign = 1;
     if (str == NULL) {
         return 0;
     }
@@ -101,4 +101,3 @@ int my_atoi(char *str) {
     }
     return x * sign;
 }
-

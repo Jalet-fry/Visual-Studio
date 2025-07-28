@@ -168,3 +168,4 @@ int main() {
     freeFileInfo(&file_info);
 
     return 0;
+}
